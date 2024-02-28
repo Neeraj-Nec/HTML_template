@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f4f4f4;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .login-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+        .social-buttons {
+            margin-top: 20px;
+        }
+        .social-buttons button {
+            width: 100%;
+            margin: 5px 0;
+        }
+        .register-link {
+            margin-top: 10px;
+        }
+        .login-by-mobile {
+            margin-top: 10px;
+        }
+        .image-section {
+            background: url('your-image-url.jpg') center/cover no-repeat; /* Replace 'your-image-url.jpg' with your image URL */
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+        }
+        .overlay {
+            background: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .custom-login-div {
+            padding-top: 90px; /* Adjust padding for better alignment */
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Image Section -->
+            <div class="col-md-6 image-section d-none d-md-block">
+                <div class="overlay">
+                    <h1>Your Title</h1>
+                    <p>Your description goes here.</p>
+                </div>
+            </div>
+
+            <!-- Login Form Section -->
+            <div class="col-md-6 custom-login-div">
+                <div class="login-container">
+                    <h2>Login</h2>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Username" id="username" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Password" id="password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Login</button>
+                    </form>
+                    <div class="social-buttons">
+                        <button class="btn btn-info btn-block">Login with Twitter</button>
+                        <button class="btn btn-primary btn-block">Login with Facebook</button>
+                        <button class="btn btn-danger btn-block">Login with Google</button>
+                    </div>
+                    <div class="register-link">
+                        <p>Don't have an account? <a href="register.html">Register here</a></p>
+                    </div>
+                    <div class="login-by-mobile">
+                        <p>Forgot UserName Password? <a href="mobileLogin.html">Login By Mobile</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
