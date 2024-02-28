@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Add custom styles here */
+        .custom-navbar {
+            padding: 1%; /* Adjust padding for width */
+        }
+
+        /* Add white hover effect on buttons */
+        .navbar-nav .nav-item .nav-link,
+        .navbar-nav .nav-item .btn {
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar-nav .nav-item .nav-link:hover,
+        .navbar-nav .nav-item .btn:hover {
+            background-color: white;
+            color: #343a40; /* Change text color on hover */
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top custom-navbar">
+        <a class="navbar-brand" href="#"><img src="your-icon-image.png" alt="Website Icon"></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="coursesDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Course
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="coursesDropdown">
+                        <a class="dropdown-item" href="#">Course 1 - Feature 1</a>
+                        <a class="dropdown-item" href="#">Course 1 - Feature 2</a>
+                        <a class="dropdown-item" href="#">Course 1 - Feature 3</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Course 2 - Feature 1</a>
+                        <a class="dropdown-item" href="#">Course 2 - Feature 2</a>
+                        <a class="dropdown-item" href="#">Course 2 - Feature 3</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Online Class</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Test Series</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Question Paper</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Free Content</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+                <!-- Search Box -->
+                <li class="nav-item">
+                    <form class="form-inline my-2 my-lg-0">
+                        <div class="input-group">
+                            <input class="form-control mr-sm-2 w-sm-100" type="search" placeholder="Search"
+                                aria-label="Search">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-light" type="submit"><i
+                                        class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </li>
+                <!-- Login/Register Button -->
+                <li class="nav-item">
+                    <button class="btn btn-outline-light ml-2" type="button">Login/Register</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ... (remaining code) ... -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
